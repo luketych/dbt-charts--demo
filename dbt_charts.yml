@@ -1,0 +1,7 @@
+sources:
+  db:
+    type: postgres
+    host: "{{ env_var('DCT_DB_HOST', 'localhost') }}"
+    dbname: "{{ env_var('DCT_DB_DBNAME', 'analytics') }}"
+    user: "{{ env_var('DCT_DB_USER', 'readonly') }}"
+    password: "{{ env_var('DCT_DB_PASSWORD', 'unused') }}"
